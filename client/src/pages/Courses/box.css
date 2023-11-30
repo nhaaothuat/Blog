@@ -1,0 +1,66 @@
+/* .container {
+     display: flex;
+     flex-wrap: wrap;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    } */
+   
+      .h1{
+     display: flex; 
+     flex-direction: column; 
+     align-items: center;
+     justify-content: center; 
+     margin-bottom: 30px;
+     font-size: 35px;
+   }
+   
+    a {
+     text-decoration: none;
+    }
+    
+   .box {
+     margin-left: 15px;
+     margin-bottom: 30px;
+     margin-right: 15px;
+     border: 2px solid #333;
+     padding: 50px;
+     background-color: #f0f0f0;
+     border-radius: 5px;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+     text-align: center; /* Căn giữa nội dung ngang */
+     display: flex; /* Hiển thị nội dung theo chiều dọc giữa hộp */
+     flex-direction: column; /* Hiển thị các phần tử con theo chiều dọc */
+     align-items: center; /* Căn giữa nội dung theo chiều dọc */
+     justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+     border: 0;
+     background: linear-gradient(to right, #7FFFD4, #00FFFF);
+     animation: moveBox 5s linear infinite;
+   }
+   
+   @keyframes moveBox {
+     0% {
+       transform: translateX(0);
+     }
+     25% {
+       transform: translateX(0);
+     }
+     50% {
+       transform: translateX(5px);
+     }
+     75% {
+       transform: translateX(15px);
+     }
+     0% {
+       transform: translateX(0);
+     }
+     25% {
+       transform: translateX(-15px);
+     }
+     50% {
+       transform: translateX(-5px);  
+     }
+     /* 75% {
+       transform: translateX(0);
+     } */
+   
+   }
